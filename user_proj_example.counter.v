@@ -100,7 +100,7 @@ module user_proj_example #(
     
     
     always@(posedge clk or negedge rst)begin
-    	if(rst) begin
+    	if(!rst) begin
     		counter <= 0;
     	end
     	else begin
